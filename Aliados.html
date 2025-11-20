@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Aliados y Redes - Incubadora TecNM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Red de aliados estratégicos y partners de la Incubadora TecNM">
+    
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/paginas.css">
+</head>
+
+<body id="barraencubadora">
+
+    <!-- 🔹 Barra de Publicidad -->
+    <div class="barra-publicidad">
+        <p>🎓 Bienvenido a la Incubadora - TecNM Pinotepa Nacional</p>
+    </div>
+
+    <!-- 🔹 Encabezado y Menú -->
+    <header>
+        <div id="logo">
+            <h1>Incubadora TecNM</h1>
+            <p class="subtitulo">Pinotepa Nacional, Oaxaca</p>
+        </div>
+        
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="#" class="has-submenu">Sobre Nosotros</a>
+                    <ul class="submenu">
+                        <li><a href="micion.html">Misión y Visión</a></li>
+                        <li><a href="Historia.html">Historia</a></li>
+                        <li><a href="Equipo-y-mentores.html">Equipo y Mentores</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="has-submenu">Programas</a>
+                    <ul class="submenu">
+                        <li><a href="Pre-incubacion.html">Pre-incubación</a></li>
+                        <li><a href="incubacion.html">Incubación</a></li>
+                        <li><a href="aceleracion.html">Aceleración</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="has-submenu">Admisión</a>
+                    <ul class="submenu">
+                        <li><a href="convocatorias.html">Convocatorias</a></li>
+                        <li><a href="requisitos.html">Requisitos</a></li>
+                        <li><a href="aplicacion.html">Aplica Ahora</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="has-submenu">Portafolio</a>
+                    <ul class="submenu">
+                        <li><a href="empresas.html">Empresas Graduadas</a></li>
+                        <li><a href="testimonios.html">Testimonios</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="has-submenu">Servicios</a>
+                    <ul class="submenu">
+                        <li><a href="asesoria.html">Asesoría Legal</a></li>
+                        <li><a href="espacios.html">Espacios de Trabajo</a></li>
+                        <li><a href="talleres.html">Talleres y Capacitación</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="has-submenu">Comunidad</a>
+                    <ul class="submenu">
+                        <li><a href="aliados.html">Aliados y Redes</a></li>
+                        <li><a href="blog.html">Noticias / Blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="user-actions"><a href="login.html">Iniciar Sesión</a></li>
+                <li class="user-actions"><a href="register.html">Registrarse</a></li>
+            </ul>
+        </nav>
+
+        <!-- Botón Hamburguesa (Móvil) -->
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Overlay para menú móvil -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- 🔹 Contenido Específico de la Página -->
+    
+    <div class="page-header">
+        <h1>Aliados y Redes</h1>
+        <p>Conectamos tu emprendimiento con una red poderosa de organizaciones y expertos</p>
+    </div>
+
+    <main class="page-content-wrapper">
+        <div class="aliados-intro">
+            <h2 class="section-title">Una Red que Impulsa tu Crecimiento</h2>
+            <p>Trabajamos en colaboración con instituciones gubernamentales, empresas privadas, universidades y organizaciones 
+            internacionales para brindarte las mejores oportunidades y recursos para tu emprendimiento.</p>
+        </div>
+
+        <!-- Filtros por Tipo de Aliado -->
+        <div class="filtros-aliados">
+            <button class="filtro-btn active" data-tipo="todos">Todos</button>
+            <button class="filtro-btn" data-tipo="gobierno">Gobierno</button>
+            <button class="filtro-btn" data-tipo="empresas">Empresas</button>
+            <button class="filtro-btn" data-tipo="academia">Academia</button>
+            <button class="filtro-btn" data-tipo="internacional">Internacional</button>
+            <button class="filtro-btn" data-tipo="inversionistas">Inversionistas</button>
+        </div>
+
+        <!-- Grid de Aliados -->
+        <div class="aliados-grid">
+            <!-- Aliado 1 - Gobierno -->
+            <div class="aliado-card" data-tipo="gobierno">
+                <div class="aliado-logo">
+                    <img src="https://placehold.co/150x80/003366/FFFFFF?text=SE" alt="Secretaría de Economía">
+                </div>
+                <div class="aliado-info">
+                    <h3>Secretaría de Economía</h3>
+                    <p class="aliado-desc">Acceso a fondos de capital semilla y programas de apoyo a PyMEs a nivel federal.</p>
+                    <div class="aliado-beneficios">
+                        <span class="beneficio">💰 Fondos federales</span>
+                        <span class="beneficio">📊 Capacitación</span>
+                        <span class="beneficio">🌐 Red nacional</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aliado 2 - Empresa -->
+            <div class="aliado-card" data-tipo="empresas">
+                <div class="aliado-logo">
+                    <img src="https://placehold.co/150x80/DC143C/FFFFFF?text=Google" alt="Google for Startups">
+                </div>
+                <div class="aliado-info">
+                    <h3>Google for Startups</h3>
+                    <p class="aliado-desc">Acceso a créditos en la nube, mentoría técnica y programas de aceleración global.</p>
+                    <div class="aliado-beneficios">
+                        <span class="beneficio">☁️ $100k en créditos</span>
+                        <span class="beneficio">🔧 Herramientas Google</span>
+                        <span class="beneficio">🌎 Red global</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aliado 3 - Academia -->
+            <div class="aliado-card" data-tipo="academia">
+                <div class="aliado-logo">
+                    <img src="https://placehold.co/150x80/228B22/FFFFFF?text=UABJO" alt="UABJO">
+                </div>
+                <div class="aliado-info">
+                    <h3>Universidad Autónoma Benito Juárez de Oaxaca</h3>
+                    <p class="aliado-desc">Colaboración en investigación, acceso a talento especializado y proyectos conjuntos.</p>
+                    <div class="aliado-beneficios">
+                        <span class="beneficio">🎓 Talento especializado</span>
+                        <span class="beneficio">🔬 Investigación aplicada</span>
+                        <span class="beneficio">🤝 Proyectos conjuntos</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aliado 4 - Internacional -->
+            <div class="aliado-card" data-tipo="internacional">
+                <div class="aliado-logo">
+                    <img src="https://placehold.co/150x80/FF6B35/FFFFFF?text=Ashoka" alt="Ashoka">
+                </div>
+                <div class="aliado-info">
+                    <h3>Ashoka</h3>
+                    <p class="aliado-desc">Red global de emprendedores sociales, mentoría internacional y oportunidades de impacto.</p>
+                    <div class="aliado-beneficios">
+                        <span class="beneficio">🌍 Red global</span>
+                        <span class="beneficio">💡 Innovación social</span>
+                        <span class="beneficio">🤝 Mentoría internacional</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aliado 5 - Inversionistas -->
+            <div class="aliado-card" data-tipo="inversionistas">
+                <div class="aliado-logo">
+                    <img src="https://placehold.co/150x80/8B4513/FFFFFF?text=Angel" alt="Angel Ventures">
+                </div>
+                <div class="aliado-info">
+                    <h3>Angel Ventures México</h3>
+                    <p class="aliado-desc">Conexión con inversionistas ángeles y fondos de capital emprendedor para rondas de inversión.</p>
+                    <div class="aliado-beneficios">
+                        <span class="beneficio">💼 Conexión con inversionistas</span>
+                        <span class="beneficio">📈 Preparación para inversión</span>
+                        <span class="beneficio">🤝 Demo Days</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aliado 6 - Gobierno -->
+            <div class="aliado-card" data-tipo="gobierno">
+                <div class="aliado-logo">
+                    <img src="https://placehold.co/150x80/4B0082/FFFFFF?text=CONACYT" alt="CONACYT">
+                </div>
+                <div class="aliado-info">
+                    <h3>CONACYT</h3>
+                    <p class="aliado-desc">Fondos para proyectos de base tecnológica e innovación, becas y estímulos fiscales.</p>
+                    <div class="aliado-beneficios">
+                        <span class="beneficio">🔬 Fondos para I+D</span>
+                        <span class="beneficio">🎓 Becas de posgrado</span>
+                        <span class="beneficio">📊 Estímulos fiscales</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Beneficios de la Red -->
+        <div class="beneficios-red">
+            <h3 class="section-title">Ventajas de Nuestra Red</h3>
+            <div class="beneficios-grid">
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">🚀</div>
+                    <h4>Aceleración</h4>
+                    <p>Acceso a programas y recursos que aceleran el crecimiento de tu startup</p>
+                </div>
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">💰</div>
+                    <h4>Financiamiento</h4>
+                    <p>Conectamos con fuentes de financiamiento público y privado</p>
+                </div>
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">🌎</div>
+                    <h4>Alcance Global</h4>
+                    <p>Oportunidades de expansión internacional y networking global</p>
+                </div>
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">🎓</div>
+                    <h4>Talent</h4>
+                    <p>Acceso a talento especializado de universidades y centros de investigación</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Estadísticas de la Red -->
+        <div class="estadisticas-red">
+            <h3 class="section-title">Nuestra Red en Números</h3>
+            <div class="estadisticas-grid">
+                <div class="estadistica-item">
+                    <div class="estadistica-number">50+</div>
+                    <div class="estadistica-label">Organizaciones Aliadas</div>
+                </div>
+                <div class="estadistica-item">
+                    <div class="estadistica-number">15</div>
+                    <div class="estadistica-label">Países Representados</div>
+                </div>
+                <div class="estadistica-item">
+                    <div class="estadistica-number">$25M+</div>
+                    <div class="estadistica-label">En Fondos Disponibles</div>
+                </div>
+                <div class="estadistica-item">
+                    <div class="estadistica-number">200+</div>
+                    <div class="estadistica-label">Expertos en la Red</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA para Nuevos Aliados -->
+        <div class="cta-aliados">
+            <div class="cta-content">
+                <h3>¿Eres una organización interesada en unirte a nuestra red?</h3>
+                <p>Colaboremos juntos para impulsar el ecosistema emprendedor de Oaxaca</p>
+                <div class="cta-buttons">
+                    <a href="contacto.html" class="btn-cta">Ser Aliado</a>
+                    <a href="mailto:aliados@pinotepa.tecnm.mx" class="btn-cta secondary">Contactar</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- 🔹 Pie de página -->
+    <footer>
+        <p>&copy; 2025 Incubadora TecNM Pinotepa Nacional | Todos los derechos reservados</p>
+        <p>Desarrollado por <a href="#">TecNM Pinotepa</a></p>
+    </footer>
+
+    <!-- 🔹 Scripts -->
+    <script src="js/menu.js"></script>
+    <script src="js/aliados.js"></script>
+</body>
+</html>

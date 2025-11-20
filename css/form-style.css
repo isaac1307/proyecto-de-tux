@@ -1,0 +1,131 @@
+/* === BASE GENERAL (Inspirado en style.css) === */
+body {
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #F2F2F2; /* Fondo gris claro de tu original */
+	color: #003B71; /* Color de texto principal */
+    
+    /* Centrar el contenido */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* === CONTENEDOR DEL FORMULARIO (Inspirado en .tarjeta) === */
+.form-container {
+    background-color: #fff;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+	border-radius: 15px;
+	padding: 30px 40px;
+    width: 100%;
+    max-width: 450px;
+}
+
+/* === LOGO (Tomado de #logo) === */
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.logo-container h1 {
+	color: #003B71;
+	font-size: 28px;
+	font-weight: bold;
+	letter-spacing: 1px;
+    margin: 0;
+}
+.logo-container .subtitulo {
+	font-size: 13px;
+	color: #0076CE; /* Color de acento azul */
+	font-weight: bold;
+    margin: 0;
+}
+
+/* === TÍTULO DEL FORMULARIO === */
+.form-title {
+    text-align: center;
+    color: #003B71;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* === GRUPOS DE FORMULARIO === */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+    font-size: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #0076CE;
+    box-shadow: 0 0 5px rgba(0, 118, 206, 0.3);
+}
+
+/* === BOTÓN (Tomado del color principal) === */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #003B71; /* Azul principal */
+}
+
+.btn-primary:hover {
+    background-color: #0076CE; /* Azul de acento */
+    transform: translateY(-2px);
+}
+
+/* === LINKS INFERIORES === */
+.form-links {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.form-links p {
+    margin-bottom: 10px;
+}
+
+.form-links a {
+    color: #0076CE; /* Azul de acento */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-links a:hover {
+    text-decoration: underline;
+}
+
+.form-links .back-link {
+    color: #555;
+    font-weight: normal;
+}

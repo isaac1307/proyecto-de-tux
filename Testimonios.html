@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Testimonios - Incubadora TecNM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Testimonios de emprendedores graduados de la Incubadora TecNM">
+    
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/paginas.css">
+</head>
+
+<body id="barraencubadora">
+
+    <!-- 🔹 Barra de Publicidad -->
+    <div class="barra-publicidad">
+        <p>🎓 Bienvenido a la Incubadora - TecNM Pinotepa Nacional</p>
+    </div>
+
+    <!-- 🔹 Encabezado y Menú -->
+    <header>
+        <div id="logo">
+            <h1>Incubadora TecNM</h1>
+            <p class="subtitulo">Pinotepa Nacional, Oaxaca</p>
+        </div>
+        
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="#" class="has-submenu">Sobre Nosotros</a>
+                    <ul class="submenu">
+                        <li><a href="micion.html">Misión y Visión</a></li>
+                        <li><a href="Historia.html">Historia</a></li>
+                        <li><a href="Equipo-y-mentores.html">Equipo y Mentores</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="has-submenu">Programas</a>
+                    <ul class="submenu">
+                        <li><a href="Pre-incubacion.html">Pre-incubación</a></li>
+                        <li><a href="incubacion.html">Incubación</a></li>
+                        <li><a href="aceleracion.html">Aceleración</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="has-submenu">Admisión</a>
+                    <ul class="submenu">
+                        <li><a href="convocatorias.html">Convocatorias</a></li>
+                        <li><a href="requisitos.html">Requisitos</a></li>
+                        <li><a href="aplicacion.html">Aplica Ahora</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="has-submenu">Portafolio</a>
+                    <ul class="submenu">
+                        <li><a href="empresas.html">Empresas Graduadas</a></li>
+                        <li><a href="testimonios.html">Testimonios</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="has-submenu">Servicios</a>
+                    <ul class="submenu">
+                        <li><a href="asesoria.html">Asesoría Legal</a></li>
+                        <li><a href="espacios.html">Espacios de Trabajo</a></li>
+                        <li><a href="talleres.html">Talleres y Capacitación</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="has-submenu">Comunidad</a>
+                    <ul class="submenu">
+                        <li><a href="aliados.html">Aliados y Redes</a></li>
+                        <li><a href="blog.html">Noticias / Blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="user-actions"><a href="login.html">Iniciar Sesión</a></li>
+                <li class="user-actions"><a href="register.html">Registrarse</a></li>
+            </ul>
+        </nav>
+
+        <!-- Botón Hamburguesa (Móvil) -->
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Overlay para menú móvil -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- 🔹 Contenido Específico de la Página -->
+    
+    <div class="page-header">
+        <h1>Testimonios</h1>
+        <p>Historias reales de emprendedores que transformaron sus ideas en empresas exitosas</p>
+    </div>
+
+    <main class="page-content-wrapper">
+        <h2 class="section-title">Lo que dicen nuestros emprendedores</h2>
+        
+        <!-- Filtros por Programa -->
+        <div class="filtros-testimonios">
+            <button class="filtro-btn active" data-programa="todos">Todos</button>
+            <button class="filtro-btn" data-programa="pre-incubacion">Pre-incubación</button>
+            <button class="filtro-btn" data-programa="incubacion">Incubación</button>
+            <button class="filtro-btn" data-programa="aceleracion">Aceleración</button>
+        </div>
+
+        <!-- Grid de Testimonios -->
+        <div class="testimonios-grid">
+            <!-- Testimonio 1 -->
+            <div class="testimonio-card" data-programa="incubacion">
+                <div class="testimonio-header">
+                    <div class="testimonio-avatar">
+                        <img src="https://placehold.co/80x80/003366/FFFFFF?text=AM" alt="Ana Martínez">
+                    </div>
+                    <div class="testimonio-info">
+                        <h3>Ana Martínez</h3>
+                        <p class="testimonio-empresa">TechOaxaca Solutions</p>
+                        <p class="testimonio-programa">Programa de Incubación 2023</p>
+                    </div>
+                </div>
+                <div class="testimonio-content">
+                    <div class="testimonio-rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <p class="testimonio-text">
+                        "La incubadora transformó completamente mi perspectiva empresarial. De tener solo una idea, 
+                        hoy tengo una empresa con 12 empleados y más de 45 clientes satisfechos. La mentoría y el 
+                        acceso a la red de contactos fueron clave para nuestro crecimiento."
+                    </p>
+                    <div class="testimonio-logros">
+                        <span class="logro">🚀 12 empleos creados</span>
+                        <span class="logro">💰 $2.5M en ventas anuales</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonio 2 -->
+            <div class="testimonio-card" data-programa="pre-incubacion">
+                <div class="testimonio-header">
+                    <div class="testimonio-avatar">
+                        <img src="https://placehold.co/80x80/228B22/FFFFFF?text=CR" alt="Carlos Rodríguez">
+                    </div>
+                    <div class="testimonio-info">
+                        <h3>Carlos Rodríguez</h3>
+                        <p class="testimonio-empresa">AgroPinotepa</p>
+                        <p class="testimonio-programa">Programa de Pre-incubación 2022</p>
+                    </div>
+                </div>
+                <div class="testimonio-content">
+                    <div class="testimonio-rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <p class="testimonio-text">
+                        "Como ingeniero agrónomo, tenía el conocimiento técnico pero no sabía cómo emprender. 
+                        La pre-incubación me enseñó a validar mi idea y construir un modelo de negocio sólido. 
+                        Hoy exportamos productos agrícolas a Estados Unidos y trabajamos con 120 productores locales."
+                    </p>
+                    <div class="testimonio-logros">
+                        <span class="logro">🌱 Exportación internacional</span>
+                        <span class="logro">👨‍🌾 120 familias beneficiadas</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonio 3 -->
+            <div class="testimonio-card" data-programa="aceleracion">
+                <div class="testimonio-header">
+                    <div class="testimonio-avatar">
+                        <img src="https://placehold.co/80x80/FF6B35/FFFFFF?text=MG" alt="María González">
+                    </div>
+                    <div class="testimonio-info">
+                        <h3>María González</h3>
+                        <p class="testimonio-empresa">EduTech Oaxaca</p>
+                        <p class="testimonio-programa">Programa de Aceleración 2024</p>
+                    </div>
+                </div>
+                <div class="testimonio-content">
+                    <div class="testimonio-rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <p class="testimonio-text">
+                        "El programa de aceleración nos ayudó a escalar nuestra plataforma educativa de manera exponencial. 
+                        Con las estrategias de crecimiento y el acceso a inversionistas, logramos quintuplicar nuestro 
+                        número de estudiantes en solo 4 meses. Una experiencia transformadora."
+                    </p>
+                    <div class="testimonio-logros">
+                        <span class="logro">📈 850+ estudiantes</span>
+                        <span class="logro">🏆 Premio a la Innovación</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonio 4 -->
+            <div class="testimonio-card" data-programa="incubacion">
+                <div class="testimonio-header">
+                    <div class="testimonio-avatar">
+                        <img src="https://placehold.co/80x80/8B4513/FFFFFF?text=JL" alt="José López">
+                    </div>
+                    <div class="testimonio-info">
+                        <h3>José López</h3>
+                        <p class="testimonio-empresa">Artesanías Mixtecas</p>
+                        <p class="testimonio-programa">Programa de Incubación 2023</p>
+                    </div>
+                </div>
+                <div class="testimonio-content">
+                    <div class="testimonio-rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <p class="testimonio-text">
+                        "Nunca imaginé que nuestras artesanías tradicionales podrían llegar a todo el mundo. 
+                        La incubadora nos enseñó a digitalizar nuestro negocio y crear una marca sólida. 
+                        Ahora exportamos a 5 países y hemos preservado técnicas ancestrales que estaban en peligro de perderse."
+                    </p>
+                    <div class="testimonio-logros">
+                        <span class="logro">🌎 Exportación a 5 países</span>
+                        <span class="logro">🛒 500+ ventas mensuales</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonio 5 -->
+            <div class="testimonio-card" data-programa="pre-incubacion">
+                <div class="testimonio-header">
+                    <div class="testimonio-avatar">
+                        <img src="https://placehold.co/80x80/4B0082/FFFFFF?text=SR" alt="Sofía Ramírez">
+                    </div>
+                    <div class="testimonio-info">
+                        <h3>Sofía Ramírez</h3>
+                        <p class="testimonio-empresa">BioTech Solutions</p>
+                        <p class="testimonio-programa">Programa de Pre-incubación 2023</p>
+                    </div>
+                </div>
+                <div class="testimonio-content">
+                    <div class="testimonio-rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <p class="testimonio-text">
+                        "Como científica, siempre tuve ideas innovadoras pero no sabía cómo convertirlas en negocios. 
+                        La pre-incubación me dio las herramientas para validar mi tecnología y encontrar su aplicación 
+                        comercial. Hoy impactamos positivamente a 25 comunidades con nuestras soluciones de tratamiento de agua."
+                    </p>
+                    <div class="testimonio-logros">
+                        <span class="logro">💧 25 comunidades impactadas</span>
+                        <span class="logro">🔬 Tecnología patentada</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonio 6 -->
+            <div class="testimonio-card" data-programa="aceleracion">
+                <div class="testimonio-header">
+                    <div class="testimonio-avatar">
+                        <img src="https://placehold.co/80x80/DC143C/FFFFFF?text=DP" alt="David Pérez">
+                    </div>
+                    <div class="testimonio-info">
+                        <h3>David Pérez</h3>
+                        <p class="testimonio-empresa">Tour Oaxaca Experiences</p>
+                        <p class="testimonio-programa">Programa de Aceleración 2023</p>
+                    </div>
+                </div>
+                <div class="testimonio-content">
+                    <div class="testimonio-rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <p class="testimonio-text">
+                        "La aceleración nos impulsó a nivel internacional. Con las estrategias de marketing digital 
+                        y la red de contactos, logramos posicionarnos como la agencia de turismo experiencial líder 
+                        en Oaxaca. Ahora recibimos turistas de todo el mundo interesados en nuestra cultura."
+                    </p>
+                    <div class="testimonio-logros">
+                        <span class="logro">🏖️ 15 rutas turísticas</span>
+                        <span class="logro">⭐ 4.9/5 rating en plataformas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Estadísticas de Satisfacción -->
+        <div class="satisfaccion-section">
+            <h3 class="section-title">Nivel de Satisfacción</h3>
+            <div class="satisfaccion-stats">
+                <div class="satisfaccion-item">
+                    <div class="satisfaccion-number">98%</div>
+                    <div class="satisfaccion-label">Recomendarían el programa</div>
+                </div>
+                <div class="satisfaccion-item">
+                    <div class="satisfaccion-number">4.9/5</div>
+                    <div class="satisfaccion-label">Calificación promedio</div>
+                </div>
+                <div class="satisfaccion-item">
+                    <div class="satisfaccion-number">85%</div>
+                    <div class="satisfaccion-label">Empresas siguen operando</div>
+                </div>
+                <div class="satisfaccion-item">
+                    <div class="satisfaccion-number">92%</div>
+                    <div class="satisfaccion-label">Lograron sus objetivos</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- 🔹 Pie de página -->
+    <footer>
+        <p>&copy; 2025 Incubadora TecNM Pinotepa Nacional | Todos los derechos reservados</p>
+        <p>Desarrollado por <a href="#">TecNM Pinotepa</a></p>
+    </footer>
+
+    <!-- 🔹 Scripts -->
+    <script src="js/menu.js"></script>
+    <script src="js/testimonios.js"></script>
+</body>
+</html>

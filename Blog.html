@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog - Incubadora TecNM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Noticias, artículos y consejos para emprendedores">
+    
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/paginas.css">
+</head>
+
+<body id="barraencubadora">
+
+    <!-- 🔹 Barra de Publicidad -->
+    <div class="barra-publicidad">
+        <p>🎓 Bienvenido a la Incubadora - TecNM Pinotepa Nacional</p>
+    </div>
+
+    <!-- 🔹 Encabezado y Menú -->
+    <header>
+        <div id="logo">
+            <h1>Incubadora TecNM</h1>
+            <p class="subtitulo">Pinotepa Nacional, Oaxaca</p>
+        </div>
+        
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="#" class="has-submenu">Sobre Nosotros</a>
+                    <ul class="submenu">
+                        <li><a href="micion.html">Misión y Visión</a></li>
+                        <li><a href="Historia.html">Historia</a></li>
+                        <li><a href="Equipo-y-mentores.html">Equipo y Mentores</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="has-submenu">Programas</a>
+                    <ul class="submenu">
+                        <li><a href="Pre-incubacion.html">Pre-incubación</a></li>
+                        <li><a href="incubacion.html">Incubación</a></li>
+                        <li><a href="aceleracion.html">Aceleración</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="has-submenu">Admisión</a>
+                    <ul class="submenu">
+                        <li><a href="convocatorias.html">Convocatorias</a></li>
+                        <li><a href="requisitos.html">Requisitos</a></li>
+                        <li><a href="aplicacion.html">Aplica Ahora</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="has-submenu">Portafolio</a>
+                    <ul class="submenu">
+                        <li><a href="empresas.html">Empresas Graduadas</a></li>
+                        <li><a href="testimonios.html">Testimonios</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="has-submenu">Servicios</a>
+                    <ul class="submenu">
+                        <li><a href="asesoria.html">Asesoría Legal</a></li>
+                        <li><a href="espacios.html">Espacios de Trabajo</a></li>
+                        <li><a href="talleres.html">Talleres y Capacitación</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="has-submenu">Comunidad</a>
+                    <ul class="submenu">
+                        <li><a href="aliados.html">Aliados y Redes</a></li>
+                        <li><a href="blog.html">Noticias / Blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="user-actions"><a href="login.html">Iniciar Sesión</a></li>
+                <li class="user-actions"><a href="register.html">Registrarse</a></li>
+            </ul>
+        </nav>
+
+        <!-- Botón Hamburguesa (Móvil) -->
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Overlay para menú móvil -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- 🔹 Contenido Específico de la Página -->
+    
+    <div class="page-header">
+        <h1>Blog y Noticias</h1>
+        <p>Mantente informado con los últimos consejos, tendencias y noticias del ecosistema emprendedor</p>
+    </div>
+
+    <main class="page-content-wrapper">
+        <div class="blog-intro">
+            <h2 class="section-title">Conocimiento que Impulsa tu Emprendimiento</h2>
+            <p>Artículos escritos por expertos, casos de éxito y las últimas tendencias en innovación y negocios.</p>
+        </div>
+
+        <!-- Filtros por Categoría -->
+        <div class="filtros-blog">
+            <button class="filtro-btn active" data-categoria="todos">Todos</button>
+            <button class="filtro-btn" data-categoria="emprendimiento">Emprendimiento</button>
+            <button class="filtro-btn" data-categoria="tecnologia">Tecnología</button>
+            <button class="filtro-btn" data-categoria="finanzas">Finanzas</button>
+            <button class="filtro-btn" data-categoria="marketing">Marketing</button>
+            <button class="filtro-btn" data-categoria="noticias">Noticias</button>
+            <button class="filtro-btn" data-categoria="casos-exito">Casos de Éxito</button>
+        </div>
+
+        <!-- Destacado Principal -->
+        <div class="destacado-principal">
+            <div class="articulo-destacado">
+                <div class="destacado-imagen">
+                    <img src="https://placehold.co/800x400/003366/FFFFFF?text=Articulo+Destacado" alt="Artículo Destacado">
+                    <div class="destacado-badge">Destacado</div>
+                </div>
+                <div class="destacado-content">
+                    <span class="articulo-categoria">Emprendimiento</span>
+                    <h2 class="articulo-titulo">5 Errores que Todo Emprendedor Comete y Cómo Evitarlos</h2>
+                    <p class="articulo-resumen">Descubre los errores más comunes en el mundo del emprendimiento y las estrategias 
+                    probadas para evitarlos desde el primer día...</p>
+                    <div class="articulo-meta">
+                        <span class="autor">Por: Dr. Juan Pérez</span>
+                        <span class="fecha">15 de Enero, 2025</span>
+                        <span class="tiempo-lectura">📖 5 min lectura</span>
+                    </div>
+                    <a href="#" class="btn-cta">Leer Artículo Completo</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grid de Artículos -->
+        <div class="blog-grid">
+            <!-- Artículo 1 -->
+            <article class="articulo-card" data-categoria="tecnologia">
+                <div class="articulo-imagen">
+                    <img src="https://placehold.co/400x250/228B22/FFFFFF?text=IA+Negocios" alt="IA en Negocios">
+                </div>
+                <div class="articulo-content">
+                    <span class="articulo-categoria">Tecnología</span>
+                    <h3 class="articulo-titulo">Cómo la Inteligencia Artificial está Transformando los Negocios en 2025</h3>
+                    <p class="articulo-resumen">Exploramos las herramientas de IA que están revolucionando la forma de hacer negocios y cómo puedes implementarlas en tu startup...</p>
+                    <div class="articulo-meta">
+                        <span class="autor">Por: Ing. Carlos López</span>
+                        <span class="fecha">12 de Enero, 2025</span>
+                        <span class="tiempo-lectura">📖 7 min</span>
+                    </div>
+                    <a href="#" class="articulo-link">Leer más →</a>
+                </div>
+            </article>
+
+            <!-- Artículo 2 -->
+            <article class="articulo-card" data-categoria="finanzas">
+                <div class="articulo-imagen">
+                    <img src="https://placehold.co/400x250/FF6B35/FFFFFF?text=Finanzas" alt="Finanzas Startups">
+                </div>
+                <div class="articulo-content">
+                    <span class="articulo-categoria">Finanzas</span>
+                    <h3 class="articulo-titulo">Guía Completa: Cómo Preparar tu Startup para una Ronda de Inversión</h3>
+                    <p class="articulo-resumen">Desde la valoración hasta el pitch deck, todo lo que necesitas saber para atraer inversionistas...</p>
+                    <div class="articulo-meta">
+                        <span class="autor">Por: C.P. Roberto Díaz</span>
+                        <span class="fecha">8 de Enero, 2025</span>
+                        <span class="tiempo-lectura">📖 10 min</span>
+                    </div>
+                    <a href="#" class="articulo-link">Leer más →</a>
+                </div>
+            </article>
+
+            <!-- Artículo 3 -->
+            <article class="articulo-card" data-categoria="casos-exito">
+                <div class="articulo-imagen">
+                    <img src="https://placehold.co/400x250/8B4513/FFFFFF?text=Caso+Exito" alt="Caso de Éxito">
+                </div>
+                <div class="articulo-content">
+                    <span class="articulo-categoria">Casos de Éxito</span>
+                    <h3 class="articulo-titulo">De Estudiante a CEO: La Historia de TechOaxaca Solutions</h3>
+                    <p class="articulo-resumen">Conoce cómo Ana Martínez transformó su proyecto universitario en una empresa que hoy emplea a 12 personas...</p>
+                    <div class="articulo-meta">
+                        <span class="autor">Por: Equipo Editorial</span>
+                        <span class="fecha">5 de Enero, 2025</span>
+                        <span class="tiempo-lectura">📖 6 min</span>
+                    </div>
+                    <a href="#" class="articulo-link">Leer más →</a>
+                </div>
+            </article>
+
+            <!-- Artículo 4 -->
+            <article class="articulo-card" data-categoria="marketing">
+                <div class="articulo-imagen">
+                    <img src="https://placehold.co/400x250/4B0082/FFFFFF?text=Marketing" alt="Marketing Digital">
+                </div>
+                <div class="articulo-content">
+                    <span class="articulo-categoria">Marketing</span>
+                    <h3 class="articulo-titulo">Estrategias de Marketing Digital que Funcionan para Startups con Presupuesto Limitado</h3>
+                    <p class="articulo-resumen">Tácticas comprobadas para generar leads y ventas sin gastar fortunas en publicidad...</p>
+                    <div class="articulo-meta">
+                        <span class="autor">Por: M.C. Ana García</span>
+                        <span class="fecha">3 de Enero, 2025</span>
+                        <span class="tiempo-lectura">📖 8 min</span>
+                    </div>
+                    <a href="#" class="articulo-link">Leer más →</a>
+                </div>
+            </article>
+
+            <!-- Artículo 5 -->
+            <article class="articulo-card" data-categoria="noticias">
+                <div class="articulo-imagen">
+                    <img src="https://placehold.co/400x250/DC143C/FFFFFF?text=Convocatoria" alt="Nueva Convocatoria">
+                </div>
+                <div class="articulo-content">
+                    <span class="articulo-categoria">Noticias</span>
+                    <h3 class="articulo-titulo">Se Abre Convocatoria 2025-1 para el Programa de Pre-incubación</h3>
+                    <p class="articulo-resumen">Conoce los detalles de nuestra nueva convocatoria y cómo aplicar para transformar tu idea en negocio...</p>
+                    <div class="articulo-meta">
+                        <span class="autor">Por: Dirección de Incubadora</span>
+                        <span class="fecha">1 de Enero, 2025</span>
+                        <span class="tiempo-lectura">📖 4 min</span>
+                    </div>
+                    <a href="#" class="articulo-link">Leer más →</a>
+                </div>
+            </article>
+
+            <!-- Artículo 6 -->
+            <article class="articulo-card" data-categoria="emprendimiento">
+                <div class="articulo-imagen">
+                    <img src="https://placehold.co/400x250/008080/FFFFFF?text=Productividad" alt="Productividad">
+                </div>
+                <div class="articulo-content">
+                    <span class="articulo-categoria">Emprendimiento</span>
+                    <h3 class="articulo-titulo">10 Hábitos Matutinos de Emprendedores Exitosos que Puedes Implementar Hoy</h3>
+                    <p class="articulo-resumen">Descubre las rutinas que han ayudado a CEOs y fundadores a mantener su productividad y enfoque...</p>
+                    <div class="articulo-meta">
+                        <span class="autor">Por: Lic. Sofía Martínez</span>
+                        <span class="fecha">28 de Diciembre, 2024</span>
+                        <span class="tiempo-lectura">📖 5 min</span>
+                    </div>
+                    <a href="#" class="articulo-link">Leer más →</a>
+                </div>
+            </article>
+        </div>
+
+        <!-- Paginación -->
+        <div class="paginacion">
+            <button class="pagina-btn active">1</button>
+            <button class="pagina-btn">2</button>
+            <button class="pagina-btn">3</button>
+            <button class="pagina-btn siguiente">Siguiente →</button>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="newsletter-section">
+            <div class="newsletter-content">
+                <h3>📬 No Te Pierdas Nuestros Artículos</h3>
+                <p>Suscríbete a nuestro newsletter y recibe los mejores consejos para emprendedores directamente en tu correo.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn-cta">Suscribirme</button>
+                </form>
+                <small>📋 Prometemos no spamear. Máximo 2 emails por mes.</small>
+            </div>
+        </div>
+    </main>
+    
+    <!-- 🔹 Pie de página -->
+    <footer>
+        <p>&copy; 2025 Incubadora TecNM Pinotepa Nacional | Todos los derechos reservados</p>
+        <p>Desarrollado por <a href="#">TecNM Pinotepa</a></p>
+    </footer>
+
+    <!-- 🔹 Scripts -->
+    <script src="js/menu.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>

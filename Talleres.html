@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Talleres y Capacitación - Incubadora TecNM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Talleres y programas de capacitación para emprendedores">
+    
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/paginas.css">
+</head>
+
+<body id="barraencubadora">
+
+    <!-- 🔹 Barra de Publicidad -->
+    <div class="barra-publicidad">
+        <p>🎓 Bienvenido a la Incubadora - TecNM Pinotepa Nacional</p>
+    </div>
+
+    <!-- 🔹 Encabezado y Menú -->
+    <header>
+        <div id="logo">
+            <h1>Incubadora TecNM</h1>
+            <p class="subtitulo">Pinotepa Nacional, Oaxaca</p>
+        </div>
+        
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="#" class="has-submenu">Sobre Nosotros</a>
+                    <ul class="submenu">
+                        <li><a href="micion.html">Misión y Visión</a></li>
+                        <li><a href="Historia.html">Historia</a></li>
+                        <li><a href="Equipo-y-mentores.html">Equipo y Mentores</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="has-submenu">Programas</a>
+                    <ul class="submenu">
+                        <li><a href="Pre-incubacion.html">Pre-incubación</a></li>
+                        <li><a href="incubacion.html">Incubación</a></li>
+                        <li><a href="aceleracion.html">Aceleración</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="has-submenu">Admisión</a>
+                    <ul class="submenu">
+                        <li><a href="convocatorias.html">Convocatorias</a></li>
+                        <li><a href="requisitos.html">Requisitos</a></li>
+                        <li><a href="aplicacion.html">Aplica Ahora</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="has-submenu">Portafolio</a>
+                    <ul class="submenu">
+                        <li><a href="empresas.html">Empresas Graduadas</a></li>
+                        <li><a href="testimonios.html">Testimonios</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="has-submenu">Servicios</a>
+                    <ul class="submenu">
+                        <li><a href="asesoria.html">Asesoría Legal</a></li>
+                        <li><a href="espacios.html">Espacios de Trabajo</a></li>
+                        <li><a href="talleres.html">Talleres y Capacitación</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="has-submenu">Comunidad</a>
+                    <ul class="submenu">
+                        <li><a href="aliados.html">Aliados y Redes</a></li>
+                        <li><a href="blog.html">Noticias / Blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="user-actions"><a href="login.html">Iniciar Sesión</a></li>
+                <li class="user-actions"><a href="register.html">Registrarse</a></li>
+            </ul>
+        </nav>
+
+        <!-- Botón Hamburguesa (Móvil) -->
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Overlay para menú móvil -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- 🔹 Contenido Específico de la Página -->
+    
+    <div class="page-header">
+        <h1>Talleres y Capacitación</h1>
+        <p>Desarrolla las habilidades que necesitas para hacer crecer tu negocio</p>
+    </div>
+
+    <main class="page-content-wrapper">
+        <div class="talleres-intro">
+            <h2 class="section-title">Capacítate con Expertos</h2>
+            <p>Ofrecemos talleres prácticos y programas de capacitación diseñados específicamente para emprendedores. 
+            Aprende de especialistas con experiencia real en el mundo empresarial.</p>
+        </div>
+
+        <!-- Filtros por Categoría -->
+        <div class="filtros-talleres">
+            <button class="filtro-btn active" data-categoria="todos">Todos</button>
+            <button class="filtro-btn" data-categoria="negocios">Negocios</button>
+            <button class="filtro-btn" data-categoria="tecnologia">Tecnología</button>
+            <button class="filtro-btn" data-categoria="marketing">Marketing</button>
+            <button class="filtro-btn" data-categoria="finanzas">Finanzas</button>
+            <button class="filtro-btn" data-categoria="habilidades">Habilidades Blandas</button>
+        </div>
+
+        <!-- Grid de Talleres -->
+        <div class="talleres-grid">
+            <!-- Taller 1 -->
+            <div class="taller-card" data-categoria="negocios">
+                <div class="taller-header">
+                    <h3>📈 Modelo de Negocio Canvas</h3>
+                    <span class="taller-nivel principiante">Principiante</span>
+                </div>
+                <div class="taller-info">
+                    <p class="taller-desc">Aprende a crear y validar tu modelo de negocio usando la metodología Business Model Canvas.</p>
+                    <div class="taller-detalles">
+                        <div class="detalle">
+                            <strong>🗓️ Duración:</strong> 4 horas
+                        </div>
+                        <div class="detalle">
+                            <strong>👨‍🏫 Instructor:</strong> Dr. Juan Pérez
+                        </div>
+                        <div class="detalle">
+                            <strong>🎯 Modalidad:</strong> Presencial/Virtual
+                        </div>
+                    </div>
+                    <div class="taller-beneficios">
+                        <span class="beneficio">📄 Plantilla Canvas</span>
+                        <span class="beneficio">🎓 Certificado</span>
+                        <span class="beneficio">🤝 Networking</span>
+                    </div>
+                </div>
+                <div class="taller-precio">
+                    <span class="precio">$500 MXN</span>
+                    <span class="precio-original">$800 MXN</span>
+                    <a href="aplicacion.html" class="btn-cta">Inscribirse</a>
+                </div>
+            </div>
+
+            <!-- Taller 2 -->
+            <div class="taller-card" data-categoria="marketing">
+                <div class="taller-header">
+                    <h3>📱 Marketing Digital para Startups</h3>
+                    <span class="taller-nivel intermedio">Intermedio</span>
+                </div>
+                <div class="taller-info">
+                    <p class="taller-desc">Estrategias de marketing digital efectivas y de bajo costo para startups.</p>
+                    <div class="taller-detalles">
+                        <div class="detalle">
+                            <strong>🗓️ Duración:</strong> 6 horas
+                        </div>
+                        <div class="detalle">
+                            <strong>👨‍🏫 Instructor:</strong> M.C. Ana García
+                        </div>
+                        <div class="detalle">
+                            <strong>🎯 Modalidad:</strong> Presencial
+                        </div>
+                    </div>
+                    <div class="taller-beneficios">
+                        <span class="beneficio">📊 Plan de marketing</span>
+                        <span class="beneficio">🛠️ Herramientas gratis</span>
+                        <span class="beneficio">🎓 Certificado</span>
+                    </div>
+                </div>
+                <div class="taller-precio">
+                    <span class="precio">$800 MXN</span>
+                    <span class="precio-original">$1,200 MXN</span>
+                    <a href="aplicacion.html" class="btn-cta">Inscribirse</a>
+                </div>
+            </div>
+
+            <!-- Taller 3 -->
+            <div class="taller-card" data-categoria="finanzas">
+                <div class="taller-header">
+                    <h3>💰 Finanzas para No Financieros</h3>
+                    <span class="taller-nivel principiante">Principiante</span>
+                </div>
+                <div class="taller-info">
+                    <p class="taller-desc">Domina los conceptos financieros básicos para tomar mejores decisiones en tu negocio.</p>
+                    <div class="taller-detalles">
+                        <div class="detalle">
+                            <strong>🗓️ Duración:</strong> 5 horas
+                        </div>
+                        <div class="detalle">
+                            <strong>👨‍🏫 Instructor:</strong> C.P. Roberto Díaz
+                        </div>
+                        <div class="detalle">
+                            <strong>🎯 Modalidad:</strong> Virtual
+                        </div>
+                    </div>
+                    <div class="taller-beneficios">
+                        <span class="beneficio">📊 Plantillas Excel</span>
+                        <span class="beneficio">📈 Flujo de caja</span>
+                        <span class="beneficio">🎓 Certificado</span>
+                    </div>
+                </div>
+                <div class="taller-precio">
+                    <span class="precio">$600 MXN</span>
+                    <span class="precio-original">$900 MXN</span>
+                    <a href="aplicacion.html" class="btn-cta">Inscribirse</a>
+                </div>
+            </div>
+
+            <!-- Taller 4 -->
+            <div class="taller-card" data-categoria="tecnologia">
+                <div class="taller-header">
+                    <h3>🌐 Desarrollo Web con WordPress</h3>
+                    <span class="taller-nivel principiante">Principiante</span>
+                </div>
+                <div class="taller-info">
+                    <p class="taller-desc">Crea tu propia página web profesional sin necesidad de saber programación.</p>
+                    <div class="taller-detalles">
+                        <div class="detalle">
+                            <strong>🗓️ Duración:</strong> 8 horas
+                        </div>
+                        <div class="detalle">
+                            <strong>👨‍🏫 Instructor:</strong> Ing. Carlos López
+                        </div>
+                        <div class="detalle">
+                            <strong>🎯 Modalidad:</strong> Presencial
+                        </div>
+                    </div>
+                    <div class="taller-beneficios">
+                        <span class="beneficio">🌐 Hosting 1 mes gratis</span>
+                        <span class="beneficio">🛠️ Plantillas premium</span>
+                        <span class="beneficio">🎓 Certificado</span>
+                    </div>
+                </div>
+                <div class="taller-precio">
+                    <span class="precio">$1,200 MXN</span>
+                    <span class="precio-original">$1,800 MXN</span>
+                    <a href="aplicacion.html" class="btn-cta">Inscribirse</a>
+                </div>
+            </div>
+
+            <!-- Taller 5 -->
+            <div class="taller-card" data-categoria="habilidades">
+                <div class="taller-header">
+                    <h3>🎤 Pitch Perfect: Presenta tu Idea</h3>
+                    <span class="taller-nivel intermedio">Intermedio</span>
+                </div>
+                <div class="taller-info">
+                    <p class="taller-desc">Aprende a crear y presentar pitches convincentes para inversionistas y clientes.</p>
+                    <div class="taller-detalles">
+                        <div class="detalle">
+                            <strong>🗓️ Duración:</strong> 4 horas
+                        </div>
+                        <div class="detalle">
+                            <strong>👨‍🏫 Instructor:</strong> Lic. Sofía Martínez
+                        </div>
+                        <div class="detalle">
+                            <strong>🎯 Modalidad:</strong> Presencial
+                        </div>
+                    </div>
+                    <div class="taller-beneficios">
+                        <span class="beneficio">📝 Feedback personalizado</span>
+                        <span class="beneficio">🎥 Grabación de pitch</span>
+                        <span class="beneficio">🎓 Certificado</span>
+                    </div>
+                </div>
+                <div class="taller-precio">
+                    <span class="precio">$700 MXN</span>
+                    <span class="precio-original">$1,000 MXN</span>
+                    <a href="aplicacion.html" class="btn-cta">Inscribirse</a>
+                </div>
+            </div>
+
+            <!-- Taller 6 -->
+            <div class="taller-card" data-categoria="negocios">
+                <div class="taller-header">
+                    <h3>📊 Análisis de Mercado y Competencia</h3>
+                    <span class="taller-nivel avanzado">Avanzado</span>
+                </div>
+                <div class="taller-info">
+                    <p class="taller-desc">Técnicas avanzadas para analizar tu mercado y desarrollar ventajas competitivas.</p>
+                    <div class="taller-detalles">
+                        <div class="detalle">
+                            <strong>🗓️ Duración:</strong> 6 horas
+                        </div>
+                        <div class="detalle">
+                            <strong>👨‍🏫 Instructor:</strong> Dr. Miguel Ángel Reyes
+                        </div>
+                        <div class="detalle">
+                            <strong>🎯 Modalidad:</strong> Virtual
+                        </div>
+                    </div>
+                    <div class="taller-beneficios">
+                        <span class="beneficio">📈 Herramientas de análisis</span>
+                        <span class="beneficio">📋 Reporte personalizado</span>
+                        <span class="beneficio">🎓 Certificado</span>
+                    </div>
+                </div>
+                <div class="taller-precio">
+                    <span class="precio">$900 MXN</span>
+                    <span class="precio-original">$1,500 MXN</span>
+                    <a href="aplicacion.html" class="btn-cta">Inscribirse</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Programas Especializados -->
+        <div class="programas-especializados">
+            <h3 class="section-title">Programas Especializados</h3>
+            <div class="programas-grid">
+                <div class="programa-card">
+                    <h4>🎓 Certificación en Emprendimiento</h4>
+                    <p>Programa integral de 3 meses con mentoría personalizada y acceso a red de inversionistas.</p>
+                    <div class="programa-duracion">
+                        <strong>Duración:</strong> 3 meses (120 horas)
+                    </div>
+                    <div class="programa-precio">
+                        <span class="precio">$8,500 MXN</span>
+                        <a href="aplicacion.html" class="btn-cta">Más Información</a>
+                    </div>
+                </div>
+                <div class="programa-card">
+                    <h4>🚀 Aceleración Digital</h4>
+                    <p>Transformación digital de tu negocio con implementación de herramientas tecnológicas.</p>
+                    <div class="programa-duracion">
+                        <strong>Duración:</strong> 2 meses (80 horas)
+                    </div>
+                    <div class="programa-precio">
+                        <span class="precio">$6,800 MXN</span>
+                        <a href="aplicacion.html" class="btn-cta">Más Información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Beneficios Adicionales -->
+        <div class="beneficios-talleres">
+            <h3 class="section-title">¿Por qué capacitarse con nosotros?</h3>
+            <div class="beneficios-grid">
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">👨‍🏫</div>
+                    <h4>Instructores Expertos</h4>
+                    <p>Profesionales con experiencia real en emprendimiento y negocios</p>
+                </div>
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">🛠️</div>
+                    <h4>Enfoque Práctico</h4>
+                    <p>Aprendizaje basado en casos reales y ejercicios aplicables</p>
+                </div>
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">🤝</div>
+                    <h4>Networking</h4>
+                    <p>Conecta con otros emprendedores y expande tu red de contactos</p>
+                </div>
+                <div class="beneficio-item">
+                    <div class="beneficio-icon">📚</div>
+                    <h4>Material Incluido</h4>
+                    <p>Recursos, plantillas y herramientas para aplicar lo aprendido</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-talleres">
+            <div class="cta-content">
+                <h3>¿No encuentras el taller que buscas?</h3>
+                <p>Contáctanos y diseñamos un programa personalizado para tu equipo</p>
+                <div class="cta-buttons">
+                    <a href="contacto.html" class="btn-cta">Solicitar Programa Personalizado</a>
+                    <a href="mailto:talleres@pinotepa.tecnm.mx" class="btn-cta secondary">Enviar Email</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- 🔹 Pie de página -->
+    <footer>
+        <p>&copy; 2025 Incubadora TecNM Pinotepa Nacional | Todos los derechos reservados</p>
+        <p>Desarrollado por <a href="#">TecNM Pinotepa</a></p>
+    </footer>
+
+    <!-- 🔹 Scripts -->
+    <script src="js/menu.js"></script>
+    <script src="js/talleres.js"></script>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Empresas Graduadas - Incubadora TecNM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Empresas exitosas graduadas de la Incubadora TecNM">
+    
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/paginas.css">
+</head>
+
+<body id="barraencubadora">
+
+    <!-- 🔹 Barra de Publicidad -->
+    <div class="barra-publicidad">
+        <p>🎓 Bienvenido a la Incubadora - TecNM Pinotepa Nacional</p>
+    </div>
+
+    <!-- 🔹 Encabezado y Menú -->
+    <header>
+        <div id="logo">
+            <h1>Incubadora TecNM</h1>
+            <p class="subtitulo">Pinotepa Nacional, Oaxaca</p>
+        </div>
+        
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="#" class="has-submenu">Sobre Nosotros</a>
+                    <ul class="submenu">
+                        <li><a href="micion.html">Misión y Visión</a></li>
+                        <li><a href="Historia.html">Historia</a></li>
+                        <li><a href="Equipo-y-mentores.html">Equipo y Mentores</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="has-submenu">Programas</a>
+                    <ul class="submenu">
+                        <li><a href="Pre-incubacion.html">Pre-incubación</a></li>
+                        <li><a href="incubacion.html">Incubación</a></li>
+                        <li><a href="aceleracion.html">Aceleración</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="has-submenu">Admisión</a>
+                    <ul class="submenu">
+                        <li><a href="convocatorias.html">Convocatorias</a></li>
+                        <li><a href="requisitos.html">Requisitos</a></li>
+                        <li><a href="aplicacion.html">Aplica Ahora</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="has-submenu">Portafolio</a>
+                    <ul class="submenu">
+                        <li><a href="empresas.html">Empresas Graduadas</a></li>
+                        <li><a href="testimonios.html">Testimonios</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="has-submenu">Servicios</a>
+                    <ul class="submenu">
+                        <li><a href="asesoria.html">Asesoría Legal</a></li>
+                        <li><a href="espacios.html">Espacios de Trabajo</a></li>
+                        <li><a href="talleres.html">Talleres y Capacitación</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="has-submenu">Comunidad</a>
+                    <ul class="submenu">
+                        <li><a href="aliados.html">Aliados y Redes</a></li>
+                        <li><a href="blog.html">Noticias / Blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="user-actions"><a href="login.html">Iniciar Sesión</a></li>
+                <li class="user-actions"><a href="register.html">Registrarse</a></li>
+            </ul>
+        </nav>
+
+        <!-- Botón Hamburguesa (Móvil) -->
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Overlay para menú móvil -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- 🔹 Contenido Específico de la Página -->
+    
+    <div class="page-header">
+        <h1>Empresas Graduadas</h1>
+        <p>Conoce los proyectos exitosos que han pasado por nuestra incubadora</p>
+    </div>
+
+    <main class="page-content-wrapper">
+        <h2 class="section-title">Nuestro Portafolio de Éxito</h2>
+        <p class="section-subtitle">Más de 50 empresas creadas y más de 200 empleos generados en la región</p>
+        
+        <!-- Filtros por Categoría -->
+        <div class="filtros-empresas">
+            <button class="filtro-btn active" data-categoria="todas">Todas</button>
+            <button class="filtro-btn" data-categoria="tecnologia">Tecnología</button>
+            <button class="filtro-btn" data-categoria="agro">Agrotecnología</button>
+            <button class="filtro-btn" data-categoria="servicios">Servicios</button>
+            <button class="filtro-btn" data-categoria="comercio">Comercio</button>
+        </div>
+
+        <!-- Grid de Empresas -->
+        <div class="empresas-grid">
+            <!-- Empresa 1 -->
+            <div class="empresa-card" data-categoria="tecnologia">
+                <div class="empresa-imagen">
+                    <img src="https://placehold.co/400x250/003366/FFFFFF?text=TechOaxaca" alt="TechOaxaca">
+                    <span class="empresa-year">2023</span>
+                </div>
+                <div class="empresa-info">
+                    <h3>TechOaxaca Solutions</h3>
+                    <p class="empresa-desc">Desarrollo de software a medida para empresas locales. Especializados en sistemas de gestión y e-commerce.</p>
+                    <div class="empresa-stats">
+                        <div class="stat">
+                            <strong>12</strong>
+                            <span>Empleados</span>
+                        </div>
+                        <div class="stat">
+                            <strong>45+</strong>
+                            <span>Clientes</span>
+                        </div>
+                        <div class="stat">
+                            <strong>$2.5M</strong>
+                            <span>Ventas anuales</span>
+                        </div>
+                    </div>
+                    <div class="empresa-logros">
+                        <span class="logro">🎖️ Mejor Startup 2023</span>
+                        <span class="logro">💼 5 empleos creados</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Empresa 2 -->
+            <div class="empresa-card" data-categoria="agro">
+                <div class="empresa-imagen">
+                    <img src="https://placehold.co/400x250/228B22/FFFFFF?text=AgroPinotepa" alt="AgroPinotepa">
+                    <span class="empresa-year">2022</span>
+                </div>
+                <div class="empresa-info">
+                    <h3>AgroPinotepa</h3>
+                    <p class="empresa-desc">Comercialización de productos agrícolas de la región mixteca con procesos de valor agregado y exportación.</p>
+                    <div class="empresa-stats">
+                        <div class="stat">
+                            <strong>8</strong>
+                            <span>Empleados</span>
+                        </div>
+                        <div class="stat">
+                            <strong>120+</strong>
+                            <span>Productores</span>
+                        </div>
+                        <div class="stat">
+                            <strong>$4.8M</strong>
+                            <span>Ventas anuales</span>
+                        </div>
+                    </div>
+                    <div class="empresa-logros">
+                        <span class="logro">🌱 Exportación a USA</span>
+                        <span class="logro">👨‍🌾 120 familias beneficiadas</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Empresa 3 -->
+            <div class="empresa-card" data-categoria="servicios">
+                <div class="empresa-imagen">
+                    <img src="https://placehold.co/400x250/FF6B35/FFFFFF?text=EduTech" alt="EduTech">
+                    <span class="empresa-year">2024</span>
+                </div>
+                <div class="empresa-info">
+                    <h3>EduTech Oaxaca</h3>
+                    <p class="empresa-desc">Plataforma de educación en línea especializada en habilidades digitales para jóvenes y adultos.</p>
+                    <div class="empresa-stats">
+                        <div class="stat">
+                            <strong>6</strong>
+                            <span>Empleados</span>
+                        </div>
+                        <div class="stat">
+                            <strong>850+</strong>
+                            <span>Estudiantes</span>
+                        </div>
+                        <div class="stat">
+                            <strong>$1.2M</strong>
+                            <span>Ventas anuales</span>
+                        </div>
+                    </div>
+                    <div class="empresa-logros">
+                        <span class="logro">📚 15 cursos disponibles</span>
+                        <span class="logro">🏆 Premio a la Innovación</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Empresa 4 -->
+            <div class="empresa-card" data-categoria="comercio">
+                <div class="empresa-imagen">
+                    <img src="https://placehold.co/400x250/8B4513/FFFFFF?text=Artesanias" alt="Artesanías Mixtecas">
+                    <span class="empresa-year">2023</span>
+                </div>
+                <div class="empresa-info">
+                    <h3>Artesanías Mixtecas</h3>
+                    <p class="empresa-desc">E-commerce de artesanías tradicionales de la mixteca oaxaqueña con envíos a todo México y EUA.</p>
+                    <div class="empresa-stats">
+                        <div class="stat">
+                            <strong>15</strong>
+                            <span>Artisanos</span>
+                        </div>
+                        <div class="stat">
+                            <strong>2000+</strong>
+                            <span>Productos</span>
+                        </div>
+                        <div class="stat">
+                            <strong>$3.1M</strong>
+                            <span>Ventas anuales</span>
+                        </div>
+                    </div>
+                    <div class="empresa-logros">
+                        <span class="logro">🛒 500+ ventas mensuales</span>
+                        <span class="logro">🌎 Envíos internacionales</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Empresa 5 -->
+            <div class="empresa-card" data-categoria="tecnologia">
+                <div class="empresa-imagen">
+                    <img src="https://placehold.co/400x250/4B0082/FFFFFF?text=BioTech" alt="BioTech Solutions">
+                    <span class="empresa-year">2024</span>
+                </div>
+                <div class="empresa-info">
+                    <h3>BioTech Solutions</h3>
+                    <p class="empresa-desc">Desarrollo de soluciones biotecnológicas para el tratamiento de aguas residuales en comunidades rurales.</p>
+                    <div class="empresa-stats">
+                        <div class="stat">
+                            <strong>10</strong>
+                            <span>Empleados</span>
+                        </div>
+                        <div class="stat">
+                            <strong>25+</strong>
+                            <span>Comunidades</span>
+                        </div>
+                        <div class="stat">
+                            <strong>$5.2M</strong>
+                            <span>Ventas anuales</span>
+                        </div>
+                    </div>
+                    <div class="empresa-logros">
+                        <span class="logro">💧 25 comunidades impactadas</span>
+                        <span class="logro">🌿 Tecnología sustentable</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Empresa 6 -->
+            <div class="empresa-card" data-categoria="servicios">
+                <div class="empresa-imagen">
+                    <img src="https://placehold.co/400x250/DC143C/FFFFFF?text=TourOaxaca" alt="Tour Oaxaca">
+                    <span class="empresa-year">2022</span>
+                </div>
+                <div class="empresa-info">
+                    <h3>Tour Oaxaca Experiences</h3>
+                    <p class="empresa-desc">Agencia de turismo experiencial enfocada en mostrar la cultura y tradiciones de la costa oaxaqueña.</p>
+                    <div class="empresa-stats">
+                        <div class="stat">
+                            <strong>12</strong>
+                            <span>Guías</span>
+                        </div>
+                        <div class="stat">
+                            <strong>3000+</strong>
+                            <span>Turistas</span>
+                        </div>
+                        <div class="stat">
+                            <strong>$8.5M</strong>
+                            <span>Ventas anuales</span>
+                        </div>
+                    </div>
+                    <div class="empresa-logros">
+                        <span class="logro">🏖️ 15 rutas turísticas</span>
+                        <span class="logro">⭐ 4.9/5 rating</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Estadísticas Generales -->
+        <div class="estadisticas-section">
+            <h3 class="section-title">Impacto Regional</h3>
+            <div class="estadisticas-grid">
+                <div class="estadistica-item">
+                    <div class="estadistica-number">50+</div>
+                    <div class="estadistica-label">Empresas Creadas</div>
+                </div>
+                <div class="estadistica-item">
+                    <div class="estadistica-number">200+</div>
+                    <div class="estadistica-label">Empleos Generados</div>
+                </div>
+                <div class="estadistica-item">
+                    <div class="estadistica-number">$85M+</div>
+                    <div class="estadistica-label">Ventas Anuales</div>
+                </div>
+                <div class="estadistica-item">
+                    <div class="estadistica-number">15</div>
+                    <div class="estadistica-label">Premios Obtenidos</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- 🔹 Pie de página -->
+    <footer>
+        <p>&copy; 2025 Incubadora TecNM Pinotepa Nacional | Todos los derechos reservados</p>
+        <p>Desarrollado por <a href="#">TecNM Pinotepa</a></p>
+    </footer>
+
+    <!-- 🔹 Scripts -->
+    <script src="js/menu.js"></script>
+    <script src="js/empresas.js"></script>
+</body>
+</html>
